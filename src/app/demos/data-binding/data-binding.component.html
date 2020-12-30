@@ -1,0 +1,37 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+          <h5 class="card-title">Interpolation</h5>
+          <p class="card-text">O número de cliques é : {{ contadorClique }}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Property Binding</h5>
+          <button class="btn btn-info" [disabled]="contadorClique >= 10">Info</button>
+          <img [src]="urlImagem" height="50px" width="50px"/>        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Event Binding</h5>
+          <button class="btn btn-warning" (click)="adicionarClique()">Clique em mim</button>
+          <br>
+          <br>
+        <button class="btn btn-danger" (click)='zerarContador()'>Zerar contador</button>        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
